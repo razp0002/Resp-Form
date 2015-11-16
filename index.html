@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <div class="wrapper">
+    	<header class="masthead">
+        	<h1>Online Forum</h1>
+        </header>
+        <section class="main">
+           <h2>User Registration</h2>
+            <p>Please fill out your information</p>
+            <form action="register.php" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="formbox">
+                	<label for="username">UserName:</label>
+                    <input type="text" name="username" id="username" autocomplete="off" required placeholder="Username" class="wide" />
+                </div>
+            	<div class="formbox">
+                	<label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" autocomplete="off" required placeholder="E-mail" class="wide" />
+                </div>
+                <div class="formbox">
+                	<label for="url">Website:</label>
+                    <input type="url" name="url" id="url" autocomplete="off" required placeholder="URL" class="wide" />
+                </div>
+                <div class="formbox">
+                	<label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass" autocomplete="off" required placeholder="Password" class="wide"/>
+                </div>
+                <div class="formbox buttons">
+                	<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" class="btn" />
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
